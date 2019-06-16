@@ -43,14 +43,6 @@ hexview_t {
   font-weight: <HEXVIEW_FONT_WEIGHT>;
   */
 }
-CustomIDAMemo {
-  border: none;
-/*  font-family: "<TEXT_INPUT_FONT_FAMILY>";
-  font-size: <TEXT_INPUT_FONT_SIZE>;
-  font-style: <TEXT_INPUT_FONT_STYLE>;
-  font-weight: <TEXT_INPUT_FONT_WEIGHT>;
-  */
-}
 QToolBar {
   /* Toolbar */
   background-color: #333;
@@ -460,4 +452,159 @@ IDADockWidget[objectName="Output window"] QGroupBox QPushButton:hover {
 }
 IDADockWidget[objectName="Output window"] QGroupBox QPushButton:focus {
   border: none;
+}
+
+CustomIDAMemo
+{
+      border: none;
+/*  font-family: "<TEXT_INPUT_FONT_FAMILY>";
+  font-size: <TEXT_INPUT_FONT_SIZE>;
+  font-style: <TEXT_INPUT_FONT_STYLE>;
+  font-weight: <TEXT_INPUT_FONT_WEIGHT>;
+  */
+
+    qproperty-line-fg-default: #6a9955;
+    qproperty-line-fg-regular-comment: #6a9955;
+    qproperty-line-fg-repeatable-comment: #808080;
+    qproperty-line-fg-automatic-comment: #808080;
+    qproperty-line-fg-insn: #d4d4d4;
+    qproperty-line-fg-dummy-data-name: #9cdcfe;
+    qproperty-line-fg-regular-data-name: #9cdcfe;
+    qproperty-line-fg-demangled-name: #dcdcaa;
+    qproperty-line-fg-punctuation: #d4d4d4;
+    qproperty-line-fg-charlit-in-insn: #d7ba7d;
+    qproperty-line-fg-strlit-in-insn: #00ff00;
+    qproperty-line-fg-numlit-in-insn: #6a9955;
+    qproperty-line-fg-void-opnd: #d7ba7d;
+    qproperty-line-fg-code-xref: #6a9955;
+    qproperty-line-fg-data-xref: #569cd6;
+    qproperty-line-fg-code-xref-to-tail: #e51400;
+    qproperty-line-fg-data-xref-to-tail: #808000;
+    qproperty-line-fg-error: #010101;
+    qproperty-line-fg-line-prefix: #c0c0c0;
+    qproperty-line-fg-opcode-byte: #b5cea8;
+    qproperty-line-fg-extra-line: #dcdcaa;
+    qproperty-line-fg-alt-opnd: #0000ff;
+    qproperty-line-fg-hidden: #d4d4d4;
+    qproperty-line-fg-libfunc: #9cdcfe;
+    qproperty-line-fg-locvar: #9cdcfe;
+    qproperty-line-fg-dummy-code-name: #9cdcfe;
+    qproperty-line-fg-asm-directive: #9cdcfe;
+    qproperty-line-fg-macro: #c586c0;
+    qproperty-line-fg-strlit-in-data: #ce9178;
+    qproperty-line-fg-charlit-in-data: #ce9178;
+    qproperty-line-fg-numlit-in-data: #6a9955;
+    qproperty-line-fg-keyword: #c586c0;
+    qproperty-line-fg-register-name: #9cdcfe;
+    qproperty-line-fg-import-name: #c586c0;
+    qproperty-line-fg-segment-name: #d4d4d4;
+    qproperty-line-fg-dummy-unknown-name: #9cdcfe;
+    qproperty-line-fg-code-name: #dcdcaa;
+    qproperty-line-fg-unknown-name: #00ffff;
+    qproperty-line-fg-collapsed-line: #6a9955;
+    qproperty-line-bg-default: #2d2d2d;
+    qproperty-line-bg-selected: #32ade1;
+    qproperty-line-pfx-libfunc: #1e1e1e;
+    qproperty-line-pfx-func: #264f78;
+    qproperty-line-pfx-insn: #00ffff;
+    qproperty-line-pfx-data: #569cd6;
+    qproperty-line-pfx-unexplored: #800000;
+    qproperty-line-pfx-extern: #858585;
+    qproperty-line-pfx-current-item: #808000;
+    qproperty-line-pfx-current-line: #ff00ff;
+    qproperty-graph-bg-top: #3c3c3c;
+    qproperty-graph-bg-bottom: #3c3c3c;
+    qproperty-graph-node-title-normal: #4b4b4b;
+    qproperty-graph-node-title-selected: #b1f9f9;
+    qproperty-graph-node-title-current: #a0cfcf;
+    qproperty-graph-node-frame-group: #ffff00;
+    qproperty-graph-node-shadow: #000000;
+    qproperty-graph-node-high1: #ccffff;
+    qproperty-graph-node-high2: #ccffcc;
+    qproperty-graph-node-foreign: #ff0000;
+    qproperty-graph-edge-normal: #0000ff;
+    qproperty-graph-edge-yes: #008000;
+    qproperty-graph-edge-no: #ff0000;
+    qproperty-graph-edge-high: #ff00ff;
+    qproperty-graph-edge-current: #00ffff;
+    qproperty-line-fg-patched-bytes: #804040;
+    qproperty-line-fg-unsaved-changes: #ff8000;
+    qproperty-line-bg-highlight: #343a40;
+    qproperty-line-bg-bpt-enabled: #e51400;
+    qproperty-line-bg-bpt-disabled: #00ff00;
+    qproperty-line-bg-bpt-unavailable: #ff8000;
+}
+
+TCpuRegs
+{
+    background-color: #4D4D4D; /* might need change */
+    qproperty-register-defined: #858585;
+    qproperty-register-changed: #569cd6;
+    qproperty-register-edited: #800080;
+    qproperty-register-unavailable: #808080;
+}
+
+navband_t
+{
+    qproperty-lib-function: #aaffff;
+    qproperty-function: #00a2e8;
+    qproperty-code: #b97a57;
+    qproperty-data: #c0c0c0;
+    qproperty-undefined: #b6b66b;
+    qproperty-extern: #c586c0;
+    qproperty-error: #ff5b5b;
+    qproperty-gap: #000000;
+    qproperty-cursor: #ffff7f;
+    qproperty-auto-analysis-cursor: #ffaa00;
+    qproperty-lumina-function: #32cd32;
+}
+
+MainMsgList
+{
+    color: #cccccc;
+    background-color: #1e1e1e;
+}
+
+TextArrows
+{
+    qproperty-jump-in-function: #c0c0c0;
+    qproperty-jump-external-to-function: #ff0000;
+    qproperty-jump-under-cursor: #000000;
+    qproperty-jump-target: #008000;
+    qproperty-register-target: #4040ff;
+}
+
+TextEdit {
+    qproperty-keyword1-fg: #0000ff;
+    qproperty-keyword2-fg: #800080;
+    qproperty-keyword3-fg: #ff0000;
+    qproperty-string-fg: #8b0000;
+    qproperty-comment-fg: #006400;
+    qproperty-preprocessor-fg: #0000ff;
+    qproperty-number-fg: #008b8b;
+}
+
+CustomIDAMemo[debugging="true"]
+{
+/*
+Unknown CLR settings
+ffa0a0	 //Current IP (+ enabled breakpoint)
+408020	 //Current IP (+ disabled breakpoint)
+1e1e1e	 //Default background
+0014e5	 //Address (+ enabled breakpoint)
+00ff00	 //Address (+ disabled breakpoint)
+004080	 //Current IP (+ unavailable breakpoint)
+0080ff	 //Address (+ unavailable breakpoint)
+*/
+    qproperty-line-bg-default: #1e1e1e;
+    qproperty-line-bgovl-current-ip: #4b4b18;
+}
+
+CustomIDAMemo[hints="true"]
+{
+    qproperty-line-bg-default: #252526;
+}
+
+navigator_t {
+    height: 10px;
 }
