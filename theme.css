@@ -504,14 +504,14 @@ CustomIDAMemo
     qproperty-line-fg-collapsed-line: #6a9955;
     qproperty-line-bg-default: #2d2d2d;
     qproperty-line-bg-selected: #32ade1;
-    qproperty-line-pfx-libfunc: #1e1e1e;
-    qproperty-line-pfx-func: #264f78;
-    qproperty-line-pfx-insn: #00ffff;
-    qproperty-line-pfx-data: #569cd6;
-    qproperty-line-pfx-unexplored: #800000;
-    qproperty-line-pfx-extern: #858585;
-    qproperty-line-pfx-current-item: #808000;
-    qproperty-line-pfx-current-line: #ff00ff;
+    qproperty-line-pfx-libfunc: #00eaea;
+    qproperty-line-pfx-func: #569cd6;
+    qproperty-line-pfx-insn: #800000;
+    qproperty-line-pfx-data: #858585;
+    qproperty-line-pfx-unexplored: #808000;
+    qproperty-line-pfx-extern: #ff00ff;
+    qproperty-line-pfx-current-item: #000000;
+    qproperty-line-pfx-current-line: #aaaaaa;
     qproperty-graph-bg-top: #3c3c3c;
     qproperty-graph-bg-bottom: #3c3c3c;
     qproperty-graph-node-title-normal: #4b4b4b;
@@ -531,13 +531,12 @@ CustomIDAMemo
     qproperty-line-fg-unsaved-changes: #ff8000;
     qproperty-line-bg-highlight: #343a40;
     qproperty-line-bg-bpt-enabled: #e51400;
-    qproperty-line-bg-bpt-disabled: #00ff00;
+    qproperty-line-bg-bpt-disabled: #019b10;
     qproperty-line-bg-bpt-unavailable: #ff8000;
 }
 
 TCpuRegs
 {
-    background-color: #4D4D4D; /* might need change */
     qproperty-register-defined: #858585;
     qproperty-register-changed: #569cd6;
     qproperty-register-edited: #800080;
@@ -586,16 +585,6 @@ TextEdit {
 
 CustomIDAMemo[debugging="true"]
 {
-/*
-Unknown CLR settings
-ffa0a0	 //Current IP (+ enabled breakpoint)
-408020	 //Current IP (+ disabled breakpoint)
-1e1e1e	 //Default background
-0014e5	 //Address (+ enabled breakpoint)
-00ff00	 //Address (+ disabled breakpoint)
-004080	 //Current IP (+ unavailable breakpoint)
-0080ff	 //Address (+ unavailable breakpoint)
-*/
     qproperty-line-bg-default: #1e1e1e;
     qproperty-line-bgovl-current-ip: #4b4b18;
 }
