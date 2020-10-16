@@ -327,33 +327,39 @@ DockWidgetTitle {
   background: #252526;
   text-transform: uppercase;
   min-height: 0px;
-  height: 20px;
+  height: 10px;
   padding: 0px 5px 0px 5px;
   border: none;
+}
+DockWidgetTitle[active="true"]
+{
+    background-color: #555;
 }
 DockWidgetTitle DockWidgetTitleButton {
   color: #fff;
   background: transparent;
   border: none;
-  min-height: 0;
-  min-width: 0;
   margin: 0;
   padding: 0;
 }
 DockWidgetTitle DockWidgetTitleButton:hover {
   background: rgba(255, 255, 255, 0.1);
 }
+/* Close, maximize and undock button for dock widgets */
+IDADockWidget > QWidget > QAbstractButton
+{
+    border-radius: 3px;
+    padding: 0;
+    icon-size: 10px;
+}
 DockWidgetTitle DockWidgetTitleButton[toolTip="Close"] {
   qproperty-icon: url("$RELPATH/icons/close.png");
-  icon-size: 20px;
 }
 DockWidgetTitle DockWidgetTitleButton[toolTip="Fullscreen"] {
   qproperty-icon: url("$RELPATH/icons/fullscreen.png");
-  icon-size: 20px;
 }
 DockWidgetTitle DockWidgetTitleButton[toolTip="Float"] {
   qproperty-icon: url("$RELPATH/icons/float.png");
-  icon-size: 20px;
 }
 EditContainer {
   border: 1px solid #1B1F20;
@@ -463,7 +469,7 @@ CustomIDAMemo
   font-weight: <TEXT_INPUT_FONT_WEIGHT>;
   */
 
-    qproperty-line-fg-default: #6a9955;
+    qproperty-line-fg-default: #96b788;
     qproperty-line-fg-regular-comment: #6a9955;
     qproperty-line-fg-repeatable-comment: #808080;
     qproperty-line-fg-automatic-comment: #808080;
@@ -597,3 +603,4 @@ CustomIDAMemo[hints="true"]
 navigator_t {
     height: 10px;
 }
+
