@@ -323,11 +323,11 @@ RegJumpButton {
 }
 /* Dock widget which has tabs */
 DockWidgetTitle {
-  font: 12px 'Segoe UI', 'Helvetica Neue';
+  font: 10px 'Segoe UI', 'Helvetica Neue';
   background: #252526;
   text-transform: uppercase;
   min-height: 0px;
-  height: 10px;
+  height: 20px;
   padding: 0px 5px 0px 5px;
   border: none;
 }
@@ -348,9 +348,9 @@ DockWidgetTitle DockWidgetTitleButton:hover {
 /* Close, maximize and undock button for dock widgets */
 IDADockWidget > QWidget > QAbstractButton
 {
-    border-radius: 3px;
-    padding: 0;
-    icon-size: 10px;
+    border-radius: 2px;
+    padding: -3px;
+    icon-size: 8px;
 }
 DockWidgetTitle DockWidgetTitleButton[toolTip="Close"] {
   qproperty-icon: url("$RELPATH/icons/close.png");
@@ -603,4 +603,3 @@ CustomIDAMemo[hints="true"]
 navigator_t {
     height: 10px;
 }
-
