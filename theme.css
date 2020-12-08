@@ -603,3 +603,20 @@ CustomIDAMemo[hints="true"]
 navigator_t {
     height: 10px;
 }
+
+/* For IDAPython/IDC Syntax highlighting */
+TextEdit {
+    qproperty-keyword1-fg: #55AAFF;
+    qproperty-keyword2-fg: #AA00FF;
+    qproperty-string-fg: #E47251;
+    qproperty-preprocessor-fg: springgreen;
+}
+
+TextEdit QWidget {
+    background-color: transparent;
+}
+
+TextEdit text_edit_margin_widget_t {
+    color: lightgrey;
+    qproperty-header-color: gainsboro;
+}
